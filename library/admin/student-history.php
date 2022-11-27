@@ -117,17 +117,13 @@ if (strlen($_SESSION['alogin']) == 0) {
 															<?php echo htmlentities($result->BookName); ?>
 														</td>
 														<td class="center">
-															<?php if ($result->ReturnDate == '') :
-																echo "Not returned yet";
-															else :
-																echo htmlentities($result->ReturnDate);
-															endif; ?>
+															<?php echo htmlentities($result->IssuesDate); ?>
 														</td>
 														<td class="center">
 															<?php if ($result->ReturnDate == '') :
-																echo "Not returned yet";
+																echo "Ainda não devolvido";
 															else :
-																echo $result->fine;
+																echo htmlentities($result->ReturnDate); 
 															endif;
 															?>
 														</td>

@@ -20,7 +20,7 @@ update tblbooks set isIssued=0 where id=:bookid";
 		$query->bindParam(':bookid', $bookid, PDO::PARAM_STR);
 		$query->execute();
 
-		$_SESSION['msg'] = "Book Returned successfully";
+		$_SESSION['msg'] = "Livro devolvido";
 		header('location:gerenciarEmprestimos.php');
 	}
 ?>

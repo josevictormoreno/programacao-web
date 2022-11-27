@@ -12,7 +12,7 @@ if (!empty($_POST["studentid"])) {
   if ($query->rowCount() > 0) {
     foreach ($results as $result) {
       if ($result->Status == 0) {
-        echo "<span style='color:red'> Student ID Blocked </span>" . "<br />";
+        echo "<span style='color:red'> ID de estudante bloqueado! </span>" . "<br />";
         echo "<b>Student Name-</b>" . $result->FullName;
         echo "<script>$('#submit').prop('disabled',true);</script>";
       } else {
@@ -28,7 +28,7 @@ if (!empty($_POST["studentid"])) {
     }
   } else {
 
-    echo "<span style='color:red'> Invaid Student Id. Please Enter Valid Student id .</span>";
+    echo "<span style='color:red'> ID invalido!</span>";
     echo "<script>$('#submit').prop('disabled',true);</script>";
   }
 }

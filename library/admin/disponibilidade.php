@@ -10,7 +10,7 @@ if (!empty($_POST["isbn"])) {
     $results = $query->fetchAll(PDO::FETCH_OBJ);
 
     if ($query->rowCount() > 0) {
-        echo "<span style='color:red'> ISBN already exists with another book. .</span>";
+        echo "<span style='color:red'> ISBN já está cadastrado para outro livro!</span>";
         echo "<script>$('#add').prop('disabled',true);</script>";
     } else {
         echo "<script>$('#add').prop('disabled',false);</script>";

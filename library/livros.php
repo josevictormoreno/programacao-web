@@ -53,7 +53,7 @@ if (strlen($_SESSION['login']) == 0) {
                             <div class="panel-body">
 
 
-                                <?php $sql = "SELECT tblbooks.BookName,tblbooks.Category,tblbooks.Author,tblbooks.ISBNNumber,tblbooks.id as bookid,tblbooks.bookImage,tblbooks.isIssued from  tblbooks";
+                                <?php $sql = "SELECT tblbooks.BookName,tblbooks.Category,tblbooks.Author,tblbooks.ISBNNumber,tblbooks.id as bookid,tblbooks.bookImage,tblbooks.isIssued from tblbooks";
     $query = $dbh->prepare($sql);
     $query->execute();
     $results = $query->fetchAll(PDO::FETCH_OBJ);
@@ -69,8 +69,8 @@ if (strlen($_SESSION['login']) == 0) {
                                     <br /><b>
                                         <?php echo htmlentities($result->BookName); ?>
                                     </b><br />
-                                    <?php echo htmlentities($result->CategoryName); ?><br />
-                                    <?php echo htmlentities($result->AuthorName); ?><br />
+                                    <?php echo htmlentities($result->Category); ?><br />
+                                    <?php echo htmlentities($result->Author); ?><br />
                                     <?php echo htmlentities($result->ISBNNumber); ?><br />
                                     <?php if ($result->isIssued == '1'): ?>
                                     <p style="color:red;">Livro Já Emprestado</p>
