@@ -30,7 +30,7 @@ INSERT INTO `tblbooks` (`id`, `BookName`, `Category`, `Author`, `ISBNNumber`, `b
 (1, 'Programação PHP e MySql', 'programming', 'autor', '222333', '1efecc0ca822e40b7b673c0d79ae943f.jpg', 1, '2022-01-22 07:23:03', '2022-01-22 16:24:13'),
 (2, 'Fisica', 'fisica', 'autor', '1111', 'dd8267b57e0e4feee5911cb1e1a03a79.jpg', 0, '2022-01-22 07:23:03', '2022-01-22 16:24:17'),
 (3, 'Murachs MySQL', 'programming', 'autor', '9350237695', '5939d64655b4d2ae443830d73abc35b6.jpg', 1, '2022-01-21 16:42:11', '2022-01-22 06:11:03'),
-(4, 'WordPress para iniciantes 2022: A Visual Step-by-Step Guide to Mastering WordPress', 'programming', 'autor', 'B019MO3WCM', '144ab706ba1cb9f6c23fd6ae9c0502b3.jpg', NULL, '2022-01-22 07:16:07', '2022-01-22 07:20:49'),
+(4, 'WordPress para iniciantes 2022', 'programming', 'autor', 'B019MO3WCM', '144ab706ba1cb9f6c23fd6ae9c0502b3.jpg', NULL, '2022-01-22 07:16:07', '2022-01-22 07:20:49'),
 (5, 'WordPress avançado!', 'programming', 'autor', 'B09NKWH7NP', '90083a56014186e88ffca10286172e64.jpg', NULL, '2022-01-22 07:18:03', '2022-01-22 07:20:58'),
 (6, 'C++: Referência completa, Edição 4', 'programming', 'autor', '007053246X', '36af5de9012bf8c804e499dc3c3b33a5.jpg', 0, '2022-01-22 07:23:36', '2022-01-22 08:18:22'),
 (7, 'ASP.NET Core 5 para iniciantes', 'programming', 'autor', 'GBSJ36344563', 'b1b6788016bbfab12cfd2722604badc9.jpg', 0, '2022-01-22 08:14:21', '2022-01-22 08:15:23');
