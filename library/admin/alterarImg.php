@@ -33,7 +33,7 @@ if (strlen($_SESSION['alogin']) == 0) {
             $query->execute();
             unlink($cpath);
             echo "<script>alert('Imagem do livro atualizada com sucesso');</script>";
-            echo "<script>window.location.href='manage-books.php'</script>";
+            echo "<script>window.location.href='gerenciarLivros.php'</script>";
 
         }
     }

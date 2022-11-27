@@ -15,7 +15,7 @@ if (strlen($_SESSION['alogin']) == 0) {
         $query->bindParam(':id', $id, PDO::PARAM_STR);
         $query->bindParam(':status', $status, PDO::PARAM_STR);
         $query->execute();
-        header('location:reg-students.php');
+        header('location:registrarEstudante.php');
     }
 
 
@@ -29,7 +29,7 @@ if (strlen($_SESSION['alogin']) == 0) {
         $query->bindParam(':id', $id, PDO::PARAM_STR);
         $query->bindParam(':status', $status, PDO::PARAM_STR);
         $query->execute();
-        header('location:reg-students.php');
+        header('location:registrarEstudante.php');
     }
 
 
@@ -130,12 +130,12 @@ if (strlen($_SESSION['alogin']) == 0) {
                                             </td>
                                             <td class="center">
                                                 <?php if ($result->Status == 1) { ?>
-                                                <a href="reg-students.php?inid=<?php echo htmlentities($result->id); ?>"
+                                                <a href="registrarEstudante.php?inid=<?php echo htmlentities($result->id); ?>"
                                                     onclick="return confirm('Tem certeza que deseja inativar esse estudante?');">
                                                     <button class="btn btn-danger"> Inativo</button>
                                                     <?php } else { ?>
 
-                                                    <a href="reg-students.php?id=<?php echo htmlentities($result->id); ?>"
+                                                    <a href="registrarEstudante.php?id=<?php echo htmlentities($result->id); ?>"
                                                         onclick="return confirm('Tem certeza que deseja ativar esse estudante?');"><button
                                                             class="btn btn-primary"> Ativo</button>
                                                         <?php } ?>

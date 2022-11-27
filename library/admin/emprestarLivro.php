@@ -20,10 +20,10 @@ update tblbooks set isIssued=:isissued where id=:bookid;";
         $lastInsertId = $dbh->lastInsertId();
         if ($lastInsertId) {
             $_SESSION['msg'] = "Book issued successfully";
-            header('location:manage-issued-books.php');
+            header('location:gerenciarEmprestimos.php');
         } else {
             $_SESSION['error'] = "Something went wrong. Please try again";
-            header('location:manage-issued-books.php');
+            header('location:gerenciarEmprestimos.php');
         }
 
     }
@@ -50,7 +50,7 @@ update tblbooks set isIssued=:isissued where id=:bookid;";
         function getstudent() {
             $("#loaderIcon").show();
             jQuery.ajax({
-                url: "get_student.php",
+                url: "getEstudante.php",
                 data: 'studentid=' + $("#studentid").val(),
                 type: "POST",
                 success: function (data) {

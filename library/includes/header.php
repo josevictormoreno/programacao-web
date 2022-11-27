@@ -28,12 +28,12 @@
                 <div class="navbar-collapse collapse ">
                     <ul id="menu-top" class="nav navbar-nav navbar-right">
                         <li><a href="painel.php" class="menu-top-active">PAINEL</a></li>
-                        <li><a href="issued-books.php">Livros Emprestados</a></li>
+                        <li><a href="emprestimos.php">Livros Emprestados</a></li>
                         <li>
                             <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Conta <i
                                     class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="my-profile.php">Meu Perfil</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="perfil.php">Meu Perfil</a></li>
                             </ul>
                         </li>
 
@@ -52,9 +52,8 @@
                 <div class="navbar-collapse collapse ">
                     <ul id="menu-top" class="nav navbar-nav navbar-right">
 
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="index.php">Login</a></li>
                         <li><a href="signup.php">Cadastro de Usuário</a></li>
-
                         <li><a href="adminlogin.php">Login do Administrador</a></li>
 
                     </ul>

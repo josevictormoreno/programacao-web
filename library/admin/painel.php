@@ -43,7 +43,7 @@ if (strlen($_SESSION['alogin']) == 0) {
         </div>
 
         <div class="row">
-          <a href="manage-books.php">
+          <a href="gerenciarLivros.php">
             <div class="col-md-3 col-sm-3 col-xs-6">
               <div class="alert alert-success back-widget-set text-center">
                 <i class="fa fa-book fa-5x"></i>
@@ -64,7 +64,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 
 
-          <a href="manage-issued-books.php">
+          <a href="gerenciarEmprestimos.php">
             <div class="col-md-3 col-sm-3 col-xs-6">
               <div class="alert alert-warning back-widget-set text-center">
                 <i class="fa fa-recycle fa-5x"></i>
@@ -84,7 +84,7 @@ if (strlen($_SESSION['alogin']) == 0) {
             </div>
           </a>
 
-          <a href="reg-students.php">
+          <a href="registrarEstudante.php">
             <div class="col-md-3 col-sm-3 col-xs-6">
               <div class="alert alert-danger back-widget-set text-center">
                 <i class="fa fa-users fa-5x"></i>

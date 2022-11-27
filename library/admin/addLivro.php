@@ -37,10 +37,10 @@ if (strlen($_SESSION['alogin']) == 0) {
 			$lastInsertId = $dbh->lastInsertId();
 			if ($lastInsertId) {
 				echo "<script>alert('Livro adicionado com sucesso!');</script>";
-				echo "<script>window.location.href='manage-books.php'</script>";
+				echo "<script>window.location.href='gerenciarLivros.php'</script>";
 			} else {
 				echo "<script>alert('Erro! Não foi possivel adicionar o livro!');</script>";
-				echo "<script>window.location.href='manage-books.php'</script>";
+				echo "<script>window.location.href='gerenciarLivros.php'</script>";
 			}
 		}
 	}
@@ -66,7 +66,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 			function checkisbnAvailability() {
 				$("#loaderIcon").show();
 				jQuery.ajax({
-					url: "check_availability.php",
+					url: "disponibilidade.php",
 					data: 'isbn=' + $("#isbn").val(),
 					type: "POST",
 					success: function(data) {

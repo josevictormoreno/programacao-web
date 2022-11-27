@@ -70,7 +70,7 @@ if (isset($_POST['signup'])) {
         function checkAvailability() {
             $("#loaderIcon").show();
             jQuery.ajax({
-                url: "check_availability.php",
+                url: "disponibilidade.php",
                 data: 'emailid=' + $("#emailid").val(),
                 type: "POST",
                 success: function (data) {

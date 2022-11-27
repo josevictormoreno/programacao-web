@@ -12,7 +12,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 		$query->bindParam(':id', $id, PDO::PARAM_STR);
 		$query->execute();
 		$_SESSION['delmsg'] = "Category deleted scuccessfully ";
-		header('location:manage-books.php');
+		header('location:gerenciarLivros.php');
 	}
 
 
@@ -93,7 +93,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 														<td class="center">
 
 															<a href="editarLivro.php?bookid=<?php echo htmlentities($result->bookid); ?>"><button class="btn btn-primary"><i class="fa fa-edit "></i> Editar</button>
-																<a href="manage-books.php?del=<?php echo htmlentities($result->bookid); ?>" onclick="return confirm('Are you sure you want to delete?');"" >  <button class=" btn btn-danger"><i class="fa fa-pencil"></i> Deletar</button>
+																<a href="gerenciarLivros.php?del=<?php echo htmlentities($result->bookid); ?>" onclick="return confirm('Tem certeza que deseja deletar?');"" >  <button class=" btn btn-danger"><i class="fa fa-pencil"></i> Deletar</button>
 														</td>
 													</tr>
 											<?php $cnt = $cnt + 1;

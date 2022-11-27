@@ -42,7 +42,7 @@ if (strlen($_SESSION['login']) == 0) {
       <div class="row">
 
 
-        <a href="listed-books.php">
+        <a href="livros.php">
           <div class="col-md-4 col-sm-4 col-xs-6">
             <div class="alert alert-success back-widget-set text-center">
               <i class="fa fa-book fa-5x"></i>
@@ -83,7 +83,7 @@ if (strlen($_SESSION['login']) == 0) {
           </div>
         </div>
 
-        <a href="issued-books.php">
+        <a href="emprestimos.php">
           <div class="col-md-4 col-sm-4 col-xs-6">
             <div class="alert alert-success back-widget-set text-center">
               <i class="fa fa-book fa-5x"></i>

@@ -21,7 +21,7 @@ update tblbooks set isIssued=0 where id=:bookid";
 		$query->execute();
 
 		$_SESSION['msg'] = "Book Returned successfully";
-		header('location:manage-issued-books.php');
+		header('location:gerenciarEmprestimos.php');
 	}
 ?>
 	<!DOCTYPE html>
@@ -46,7 +46,7 @@ update tblbooks set isIssued=0 where id=:bookid";
 			function getstudent() {
 				$("#loaderIcon").show();
 				jQuery.ajax({
-					url: "get_student.php",
+					url: "getEstudante.php",
 					data: 'studentid=' + $("#studentid").val(),
 					type: "POST",
 					success: function(data) {

@@ -75,7 +75,7 @@ if (isset($_POST['login'])) {
                                         required />
                                 </div>
 
-                                <button type="submit" name="login" class="btn btn-info">LOGIN </button>
+                                <button type="submit" name="login" class="btn btn-info">LOGIN</button>
                             </form>
                         </div>
                     </div>

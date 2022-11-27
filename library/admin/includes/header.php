@@ -32,9 +32,9 @@
                             <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Livros <i
                                     class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="add-book.php">Adicionar
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="addLivro.php">Adicionar
                                 Livro</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="manage-books.php">Modificar
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="gerenciarLivros.php">Modificar
                                 Livros</a></li>
                             </ul>
                         </li>
@@ -43,12 +43,12 @@
                             <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Livros Emprestados <i
                                     class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="issue-book.php">Emprestar Novo Livro</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="emprestarLivro.php">Emprestar Novo Livro</a></li>
                                 <li role="presentation"><a role="menuitem" tabindex="-1"
-                                        href="manage-issued-books.php">Modificar Livros Emprestados</a></li>
+                                        href="gerenciarEmprestimos.php">Modificar Livros Emprestados</a></li>
                             </ul>
                         </li>
-                        <li><a href="reg-students.php">Estudantes Registrados</a></li>
+                        <li><a href="registrarEstudante.php">Estudantes Registrados</a></li>
                     </ul>
                 </div>
             </div>

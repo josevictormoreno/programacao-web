@@ -12,7 +12,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 		$author = $_POST['author'];
 		$isbn = $_POST['isbn'];
 		$bookid = intval($_GET['bookid']);
-		$sql = "update tblbooks set BookName=:bookname,Category:category,Author=:author, where id=:bookid";
+		$sql = "update tblbooks set BookName=:bookname,Category=:category,Author=:author where id=:bookid";
 		$query = $dbh->prepare($sql);
 		$query->bindParam(':bookname', $bookname, PDO::PARAM_STR);
 		$query->bindParam(':category', $category, PDO::PARAM_STR);
@@ -20,7 +20,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 		$query->bindParam(':bookid', $bookid, PDO::PARAM_STR);
 		$query->execute();
 		echo "<script>alert('Livro atualizado com sucesso!');</script>";
-		echo "<script>window.location.href='manage-books.php'</script>";
+		echo "<script>window.location.href='gerenciarLivros.php'</script>";
 	}
 ?>
 	<!DOCTYPE html>
@@ -51,7 +51,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 			<div class="container">
 				<div class="row pad-botm">
 					<div class="col-md-12">
-						<h4 class="header-line">Adicionar Livro</h4>
+						<h4 class="header-line">Editar Livro</h4>
 
 					</div>
 
@@ -79,7 +79,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 												<div class="form-group">
 													<label>Imagem do Livro</label>
 													<img src="bookimg/<?php echo htmlentities($result->bookImage); ?>" width="100">
-													<a href="change-bookimg.php?bookid=<?php echo htmlentities($result->bookid); ?>">Mudar
+													<a href="alterarImg.php?bookid=<?php echo htmlentities($result->bookid); ?>">Mudar
 														Imagem do Livro</a>
 												</div>
 											</div>

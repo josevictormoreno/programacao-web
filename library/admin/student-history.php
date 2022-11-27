@@ -15,7 +15,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 		$query->bindParam(':id', $id, PDO::PARAM_STR);
 		$query->bindParam(':status', $status, PDO::PARAM_STR);
 		$query->execute();
-		header('location:reg-students.php');
+		header('location:registrarEstudante.php');
 	}
 
 
@@ -29,7 +29,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 		$query->bindParam(':id', $id, PDO::PARAM_STR);
 		$query->bindParam(':status', $status, PDO::PARAM_STR);
 		$query->execute();
-		header('location:reg-students.php');
+		header('location:registrarEstudante.php');
 	}
 
 
