@@ -1,4 +1,4 @@
-<div class="navbar navbar-inverse set-radius-zero">
+<div style="background-color: #912536;" class="navbar navbar-inverse set-radius-zero">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -6,10 +6,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand">
 
-                <img src="assets/img/logo.png" />
-            </a>
+                <img style="width:40%" src="assets/cliente-puc.png" />
+                <h3 style="color:white">Sistema de Biblioteca</h3>
+             
+            
 
         </div>
 
@@ -18,6 +19,7 @@
         </div>
     </div>
 </div>
+
 <!-- LOGO HEADER END-->
 <section class="menu-section">
     <div class="container">
@@ -25,26 +27,7 @@
             <div class="col-md-12">
                 <div class="navbar-collapse collapse ">
                     <ul id="menu-top" class="nav navbar-nav navbar-right">
-                        <li><a href="dashboard.php" class="menu-top-active">PAINEL</a></li>
-
-                        <li>
-                            <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Categorias <i
-                                    class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="add-category.php">Adicionar Categoria</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1"
-                                        href="manage-categories.php">Modificar Categorias</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Autores <i
-                                    class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="add-author.php">Adicionar Autor</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1"
-                                        href="manage-authors.php">Modificar Autores</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="painel.php" class="menu-top-active">PAINEL</a></li>
                         <li>
                             <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Livros <i
                                     class="fa fa-angle-down"></i></a>

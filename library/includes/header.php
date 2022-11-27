@@ -6,10 +6,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand">
-
-                <img src="assets/img/logo.png" />
-            </a>
+            <img style="width:40%" src="assets/cliente-puc.png" />
+                <h3 style="color:white">Sistema de Biblioteca</h3>
 
         </div>
         <?php if ($_SESSION['login']) {
@@ -29,7 +27,7 @@
             <div class="col-md-12">
                 <div class="navbar-collapse collapse ">
                     <ul id="menu-top" class="nav navbar-nav navbar-right">
-                        <li><a href="dashboard.php" class="menu-top-active">PAINEL</a></li>
+                        <li><a href="painel.php" class="menu-top-active">PAINEL</a></li>
                         <li><a href="issued-books.php">Livros Emprestados</a></li>
                         <li>
                             <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Conta <i

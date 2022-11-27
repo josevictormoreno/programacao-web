@@ -348,7 +348,7 @@
 		 * sZeroRecords - assuming that is given.
 		 */
 		if ( !oLanguage.sEmptyTable && zeroRecords &&
-			oDefaults.sEmptyTable === "No data available in table" )
+			oDefaults.sEmptyTable === "Nenhum livro encontrado!" )
 		{
 			_fnMap( oLanguage, oLanguage, 'sZeroRecords', 'sEmptyTable' );
 		}
@@ -10557,7 +10557,7 @@
 			 * parameter - if it is not given, the value of `zeroRecords` will be used
 			 * instead (either the default or given value).
 			 *  @type string
-			 *  @default No data available in table
+			 *  @default Nenhum item encontrado!
 			 *
 			 *  @dtopt Language
 			 *  @name DataTable.defaults.language.emptyTable
@@ -10571,7 +10571,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sEmptyTable": "No data available in table",
+			"sEmptyTable": "Nenhum item encontrado!",
 	
 	
 			/**

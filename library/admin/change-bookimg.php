@@ -23,7 +23,7 @@ if (strlen($_SESSION['alogin']) == 0) {
         // Code for move image into directory
 
         if (!in_array($extension, $allowed_extensions)) {
-            echo "<script>alert('Invalid format. Only jpg / jpeg/ png /gif format allowed');</script>";
+            echo "<script>alert('Formato invalido. Somente jpg / jpeg/ png /gif são permitidos');</script>";
         } else {
             move_uploaded_file($_FILES["bookpic"]["tmp_name"], "bookimg/" . $imgnewname);
             $sql = "update  tblbooks set bookImage=:imgnewname where id=:bookid";
@@ -32,7 +32,7 @@ if (strlen($_SESSION['alogin']) == 0) {
             $query->bindParam(':bookid', $bookid, PDO::PARAM_STR);
             $query->execute();
             unlink($cpath);
-            echo "<script>alert('Book image updated successfully');</script>";
+            echo "<script>alert('Imagem do livro atualizada com sucesso');</script>";
             echo "<script>window.location.href='manage-books.php'</script>";
 
         }

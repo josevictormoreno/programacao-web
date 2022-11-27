@@ -120,23 +120,23 @@ if (strlen($_SESSION['alogin']) == 0) {
                                             </td>
                                             <td class="center">
                                                 <?php if ($result->Status == 1) {
-                echo htmlentities("Active");
+                echo htmlentities("Ativo");
             } else {
 
 
-                echo htmlentities("Blocked");
+                echo htmlentities("Inativo");
             }
                                             ?>
                                             </td>
                                             <td class="center">
                                                 <?php if ($result->Status == 1) { ?>
                                                 <a href="reg-students.php?inid=<?php echo htmlentities($result->id); ?>"
-                                                    onclick="return confirm('Are you sure you want to block this student?');">
+                                                    onclick="return confirm('Tem certeza que deseja inativar esse estudante?');">
                                                     <button class="btn btn-danger"> Inativo</button>
                                                     <?php } else { ?>
 
                                                     <a href="reg-students.php?id=<?php echo htmlentities($result->id); ?>"
-                                                        onclick="return confirm('Are you sure you want to active this student?');"><button
+                                                        onclick="return confirm('Tem certeza que deseja ativar esse estudante?');"><button
                                                             class="btn btn-primary"> Ativo</button>
                                                         <?php } ?>
 

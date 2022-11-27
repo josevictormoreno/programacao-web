@@ -53,7 +53,7 @@ if (strlen($_SESSION['login']) == 0) {
                             <div class="panel-body">
 
 
-                                <?php $sql = "SELECT tblbooks.BookName,tblcategory.CategoryName,tblauthors.AuthorName,tblbooks.ISBNNumber,tblbooks.BookPrice,tblbooks.id as bookid,tblbooks.bookImage,tblbooks.isIssued from  tblbooks join tblcategory on tblcategory.id=tblbooks.CatId join tblauthors on tblauthors.id=tblbooks.AuthorId";
+                                <?php $sql = "SELECT tblbooks.BookName,tblbooks.Category,tblbooks.Author,tblbooks.ISBNNumber,tblbooks.id as bookid,tblbooks.bookImage,tblbooks.isIssued from  tblbooks";
     $query = $dbh->prepare($sql);
     $query->execute();
     $results = $query->fetchAll(PDO::FETCH_OBJ);
